@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oluchianyabuike.myproject2.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/court"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:text="Ready to play..."
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"/>
+
+    <Button
+        android:id="@+id/first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SINGLES"
+        android:layout_centerInParent="true"
+        style="@style/AppColors"
+        android:width="@dimen/width"
+        android:onClick="toSingles"
+        android:background="@drawable/button_shape"
+        android:layout_margin="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOUBLES"
+        android:layout_centerHorizontal="true"
+        android:onClick="toDoubles"
+        android:width="@dimen/width"
+        style="@style/AppColors"
+        android:background="@drawable/button_shape"
+        android:layout_below="@id/first_button"
+        android:id="@+id/second_button" />
+
+
+</RelativeLayout>
